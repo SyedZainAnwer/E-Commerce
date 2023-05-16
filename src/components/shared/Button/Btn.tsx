@@ -3,14 +3,19 @@ import Button from '@mui/material/Button';
 
 interface propType {
     text: string;
+    style: React.CSSProperties;
+    icon: JSX.Element;
 }
 
-const Btn = ({text}:propType) => {
+const Btn = ({ text, style, icon }:propType) => {
   return (
     <div className='btn_main'>
-      <Button variant="contained" style={{backgroundColor:"#10a37f", width:"100%"}}>
-        { text }
-      </Button>
+            <Button variant="contained" style={style}>
+              <span>
+                { icon }
+              </span>
+              {text}
+            </Button>
     </div>
   )
 }

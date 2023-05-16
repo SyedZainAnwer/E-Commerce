@@ -1,0 +1,9 @@
+.btn_main {
+    width: 100%;
+}
+
+.btn_main button span {
+    text-align: left;
+    margin-top: 10px;
+    margin-right: 20px;
+}
