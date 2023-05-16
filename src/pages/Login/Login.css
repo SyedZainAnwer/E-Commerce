@@ -1,0 +1,95 @@
+.login_main {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login_container {
+  /* width: 50%;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px; */
+  text-align: center;
+}
+
+.login_container h1 {
+  margin-top: 20px;
+  margin-bottom: 40px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #2d333a;
+}
+
+.login_container > * {
+  margin-bottom: 20px;
+}
+
+.continue_btn {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.continue_btn button {
+  width: 80%;
+  padding: 15px 125px;
+  border-radius: 5px;
+}
+
+.login_container p {
+  font-size: 18px;
+  color: #2d333a;
+  font-weight: 100;
+}
+
+.login_container p span {
+  color: #10a37f;
+}
+
+.login_container p span:hover {
+  cursor: pointer;
+}
+
+.text-between-lines {
+  display: flex;
+  align-items: center;
+}
+
+.line {
+  flex: 1;
+  border-bottom: 1px solid #c2c8d0;
+}
+
+.text {
+  padding: 0 10px;
+  font-weight: 100;
+}
+
+.google_btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.google_btn button {
+    width: 100%;
+    padding: 15px 80px 15px 20px;
+    border-radius: 5px;
+    background-color: white;
+    color: rgba(0, 0, 0, 0.87);
+    border: 1px solid #d5d6d8 !important;
+}
+
+.google_btn button span {
+    text-align: left;
+    margin-top: 10px;
+    margin-right: 20px;
+}
+
+.google_btn button:hover {
+    background-color: #e0e2e4;
+}
