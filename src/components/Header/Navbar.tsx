@@ -15,6 +15,7 @@ import AccountCircle from '@mui/icons-material/AccountCircle';
 import MailIcon from '@mui/icons-material/Mail';
 import NotificationsIcon from '@mui/icons-material/Notifications';
 import MoreIcon from '@mui/icons-material/MoreVert';
+import ShoppingCartRoundedIcon from '@mui/icons-material/ShoppingCartRounded';
 
 const Search = styled('div')(({ theme }) => ({
   position: 'relative',
@@ -123,7 +124,7 @@ export default function Navbar() {
       <MenuItem>
         <IconButton size="large" aria-label="show 4 new mails" color="inherit">
           <Badge badgeContent={4} color="error">
-            <MailIcon />
+            <ShoppingCartRoundedIcon />
           </Badge>
         </IconButton>
         <p>Messages</p>
@@ -157,7 +158,7 @@ export default function Navbar() {
 
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="static">
+      <AppBar position="static" style={{backgroundColor:"#10a37f"}}>
         <Toolbar>
           <IconButton
             size="large"
@@ -176,20 +177,22 @@ export default function Navbar() {
           >
             MUI
           </Typography>
-          <Search>
+          <div style={{width:"50%", display:"flex", justifyContent:"center", alignItems:"center"}}>
+          <Search style={{width:"50%"}}>
             <SearchIconWrapper>
               <SearchIcon />
             </SearchIconWrapper>
             <StyledInputBase
-              placeholder="Search…"
+              placeholder="Search"
               inputProps={{ 'aria-label': 'search' }}
             />
           </Search>
+          </div>
           <Box sx={{ flexGrow: 1 }} />
           <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
             <IconButton size="large" aria-label="show 4 new mails" color="inherit">
               <Badge badgeContent={4} color="error">
-                <MailIcon />
+                <ShoppingCartRoundedIcon />
               </Badge>
             </IconButton>
             <IconButton

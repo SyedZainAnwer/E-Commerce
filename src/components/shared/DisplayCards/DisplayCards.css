@@ -1,0 +1,54 @@
+.display_cards_main{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 100px;
+}
+
+.test_image {
+    display: flex;
+    position: relative;
+    justify-content: space-around;
+}
+
+.test_image img {
+    width: 60%;
+}
+
+.test_image img:hover {
+    cursor: pointer;
+}
+
+.test_image img:nth-child(3){
+    min-height: 44vh;
+}
+
+.text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    right: 0;
+    background-color: #008CBA;
+    overflow: hidden;
+    width: 60%;
+    height: 0;
+    transition: .5s ease;
+    transform: translateX(-50%);
+}
+
+.test_image:hover .overlay {
+    height: 50%;
+    cursor: pointer;
+}

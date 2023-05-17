@@ -1,10 +1,16 @@
-import Layout from "../../components/Layout"
-
+import DisplayCards from "../../components/shared/DisplayCards";
+import ImageCarousel from "../../components/shared/ImageCarousel";
+import './Home.css'
 
 const Home = () => {
   return (
     <div className="home_main">
-      <h1>Hello</h1>
+      <div className="carousel">
+      <ImageCarousel />
+      </div>
+      <div className="display_image">
+        <DisplayCards />
+      </div>
     </div>
   )
 }

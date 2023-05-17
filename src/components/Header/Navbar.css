@@ -1,0 +1,6 @@
+.search_bar {
+    width: 50% !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+}

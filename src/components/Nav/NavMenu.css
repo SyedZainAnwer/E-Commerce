@@ -1,0 +1,25 @@
+.nav_menu_main {
+    margin-top: 20px;
+}
+
+.nav_menu_main ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav_menu_main ul li {
+    display: flex;
+    list-style: none;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    font-weight: normal;
+}
+
+.down_arrow{
+    margin-top: 2px !important;
+}
+
+.nav_menu_main ul li:hover {
+    cursor: pointer;
+    color: #10a37f;
+}
