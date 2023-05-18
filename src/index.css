@@ -1,4 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Sans&display=swap');
+
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Instrument Sans', sans-serif;
+    /* box-sizing: border-box; */
 }
+
+/* color: #10a37f; hover color */

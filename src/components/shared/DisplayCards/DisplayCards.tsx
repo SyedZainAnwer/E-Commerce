@@ -6,12 +6,15 @@ import "./DisplayCards.css";
 const displayImages = [
   {
     image: BeautyImage,
+    id: 1,
   },
   {
     image: LifeStyleImage,
+    id: 2,
   },
   {
     image: KidsFashion,
+    id: 3,
   },
 ];
 
@@ -21,10 +24,10 @@ const DisplayCards = () => {
       {displayImages.map((displayImage) => {
         return (
           <div className="test_image">
-            <img src={displayImage.image} alt="" />
-        <div className="overlay">
-        <span className="text"></span>
-        </div>
+            <img src={displayImage.image} alt="" key={displayImage.id} />
+            <div className="overlay">
+              <span className="text"></span>
+            </div>
           </div>
         );
       })}

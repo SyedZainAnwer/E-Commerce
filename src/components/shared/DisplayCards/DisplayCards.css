@@ -1,8 +1,6 @@
 .display_cards_main{
-    margin-top: 50px;
     display: flex;
     justify-content: space-around;
-    margin-bottom: 100px;
 }
 
 .test_image {

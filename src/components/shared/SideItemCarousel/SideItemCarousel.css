@@ -1,0 +1,19 @@
+.items {
+    width: 100%;
+}
+
+.item_image img{
+    width: 100%;
+    object-fit: contain;
+}
+
+.item_title {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+.item_title h5 {
+    font-size: 18px;
+}

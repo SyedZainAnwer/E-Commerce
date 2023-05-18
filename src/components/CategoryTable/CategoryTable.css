@@ -1,0 +1,25 @@
+.heading {
+    padding-left: 15px;
+}
+
+.list_title {
+    font-size: 15px;
+}
+
+.list {
+    /* border: 1px solid red; */
+    box-sizing: border-box;
+    padding: 15px;
+    display: flex;
+}
+
+.list_title p:nth-child(1){
+    color: #10a37f;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.list_title p:hover {
+    cursor: pointer;
+    color: #10a37f;
+}
