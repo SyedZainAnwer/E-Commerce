@@ -4,9 +4,6 @@ import Kurti1 from "../../assets/image/kurti1.webp";
 import Kurti2 from "../../assets/image/kurti2.webp";
 import Kurti3 from "../../assets/image/kurti3.webp";
 import Kurti4 from "../../assets/image/kurti4.webp";
-import Bag from "../../assets/image/bag.webp";
-import Bed from "../../assets/image/bed.webp";
-import Train from '../../assets/image/train.webp'
 import "./Sidebar.css";
 
 const categoryLists = [
@@ -59,36 +56,13 @@ const kurtis = [
   },
 ];
 
-const sideItems = [
-  {
-    Sideimage: Bag,
-    Sidetitle: "Women Bags & Wallets",
-    id: 5545,
-  },
-  {
-    Sideimage: Bed,
-    Sidetitle: "Bed Sheets",
-    id: 2234,
-  },
-  {
-    Sideimage: Train,
-    Sidetitle: "Toys & Sports",
-    id: 3124,
-  },
-];
-
 const Sidebar = () => {
   return (
     <div className="sidebar_main">
       <div className="trening_categories">
-        <CategoryTable
-          heading="Trending Categories"
-          list_title=""
-          list_image=""
-        />
+        <h4 style={{padding:"15px"}}>Trending Categories</h4>
         {categoryLists.map((categoryList) => (
           <CategoryTable
-            heading=""
             list_title={categoryList.list_title}
             key={categoryList.id}
           />
@@ -96,25 +70,13 @@ const Sidebar = () => {
       </div>
 
       <div className="side_carousel">
-        {sideItems.map((sideItem) => (
-          <SideItemCarousel
-            image={sideItem.Sideimage}
-            title={sideItem.Sidetitle}
-            key={sideItem.id}
-          />
-        ))}
+          <SideItemCarousel/>
       </div>
 
       <div className="kurti_category">
-        <CategoryTable
-          heading="Women's Ready to Wear Kurtis"
-          list_title=""
-          list_image=""
-        />
-
+        <h4 style={{padding:"15px"}}>Women's Ready to Wear Kurtis</h4>
         {kurtis.map((kurti) => (
           <CategoryTable
-            heading=""
             list_title={kurti.price}
             list_image={kurti.image}
             list_desc={kurti.item}

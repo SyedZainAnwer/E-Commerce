@@ -2,7 +2,6 @@ import { TextField } from "@mui/material";
 import "./Login.css";
 import Btn from "../../components/shared/Button";
 import GoogleIcon from "@mui/icons-material/Google";
-import Button from "@mui/material/Button";
 
 const Login = () => {
   return (
@@ -13,13 +12,24 @@ const Login = () => {
           <TextField
             id="outlined-basic"
             label="Email Address"
+            type="email"
+            variant="outlined"
+            required
+            style={{ width: "100%" }}
+          />
+        </div>
+        <div>
+          <TextField
+            id="outlined-basic"
+            label="Password"
+            type="password"
             variant="outlined"
             required
             style={{ width: "100%" }}
           />
         </div>
         <div className="continue_btn">
-          <Btn text="Continue" style={{width:"100%", padding:"10px 125px", borderRadius:"5px", backgroundColor:"#10a37f"}} icon={null}/>
+          <Btn text="log in" style={{width:"100%", padding:"10px 125px", borderRadius:"5px", backgroundColor:"#10a37f"}} iconStyle={{display:"none"}}/>
         </div>
         <p>
           Don't have an accouunt? <span>Sign up</span>
@@ -27,7 +37,7 @@ const Login = () => {
 
         <div className="text-between-lines">
           <span className="line"></span>
-          <span className="text">OR</span>
+          <span className="text_for_login">OR</span>
           <span className="line"></span>
         </div>
         <div>

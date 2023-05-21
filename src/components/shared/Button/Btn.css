@@ -1,5 +1,7 @@
 .btn_main {
     width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 .btn_main button span {

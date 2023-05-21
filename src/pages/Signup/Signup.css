@@ -1,4 +1,4 @@
-.login_main {
+.signup_main {
   width: 100%;
   min-height: 100vh;
   display: flex;
@@ -6,64 +6,49 @@
   align-items: center;
 }
 
-.login_container {
+.signup_container {
   text-align: center;
 }
 
-.login_container h1 {
+.signup_container h2 {
   margin-top: 20px;
   margin-bottom: 40px;
-  font-size: 40px;
+  font-size: 32px;
   font-weight: bold;
   color: #2d333a;
 }
 
-.login_container > * {
+.signup_container > * {
   margin-bottom: 20px;
 }
 
-.continue_btn {
-  width: 100%;
+.username {
   display: flex;
   justify-content: center;
-  align-items: center;
-  margin-top: 20px;
+  width: 100%;
 }
 
-.continue_btn button {
-  width: 80%;
-  padding: 15px 125px;
-  border-radius: 5px;
+.first_name {
+  width: 38%;
+  margin-right: 20px;
 }
 
-.login_container p {
+.last_name {
+  width: 38%;
+}
+
+.signup_container p {
   font-size: 18px;
   color: #2d333a;
   font-weight: 100;
 }
 
-.login_container p span {
+.signup_container p span {
   color: #10a37f;
 }
 
-.login_container p span:hover {
+.signup_container p span:hover {
   cursor: pointer;
-}
-
-.text-between-lines {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.line {
-  width: 165px;
-  border-bottom: 1px solid #c2c8d0;
-}
-
-.text_for_login {
-  padding: 0 10px;
-  font-weight: 100;
 }
 
 .google_btn {
@@ -92,3 +77,7 @@
 .google_btn button:hover {
     background-color: #e0e2e4;
 }
+
+/* .username > * {
+    margin-right: 20px;
+} */

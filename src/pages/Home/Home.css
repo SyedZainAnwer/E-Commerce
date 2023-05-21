@@ -13,5 +13,16 @@
 }
 
 .sidebar {
-    width: 50%;
+    width: 30%;
+}
+
+.right_container {
+    margin-left: 30px;
+    width: 100%;
+}
+
+.item_cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }

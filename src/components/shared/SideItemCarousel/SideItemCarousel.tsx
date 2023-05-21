@@ -1,24 +1,45 @@
 import "./SideItemCarousel.css";
 import Carousel from "react-material-ui-carousel";
+import Bag from "../../../assets/image/bag.webp";
+import Bed from "../../../assets/image/bed.webp";
+import Train from '../../../assets/image/train.webp'
 
-interface propType {
-  image?: string;
-  title: string;
-}
+const sideItems = [
+  {
+    image: Bag,
+    title: "Women Bags & Wallets",
+    id: 5545,
+  },
+  {
+    image: Bed,
+    title: "Bed Sheets",
+    id: 2234,
+  },
+  {
+    image: Train,
+    title: "Toys & Sports",
+    id: 3124,
+  },
+];
 
-const SideItemCarousel = ({ image, title }: propType) => {
+
+const SideItemCarousel = () => {
   return (
     <div className="side_item_carousel_main">
       <div>
         <Carousel>
-          {/* <div className="items"> */}
+            {sideItems.map((sideItem)=> {
+              return(
+                <div className="items">
             <div className="item_image">
-              <img src={image} alt="" />
+              <img src={sideItem.image} alt="" />
             </div>
             <div className="item_title">
-              <h5>{title}</h5>
+              <h5>{sideItem.title}</h5>
             </div>
-          {/* </div> */}
+          </div>
+              )
+            })}
         </Carousel>
       </div>
     </div>

@@ -1,8 +1,8 @@
 import './CategoryTable.css'
 
 interface propType{
-    heading: string;
-    list_title: string;
+    heading?: string;
+    list_title?: string;
     list_image?: string;
     list_desc?: string;
 }

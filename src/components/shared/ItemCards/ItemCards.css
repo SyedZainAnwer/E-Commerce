@@ -1,0 +1,45 @@
+.item_cards_main {
+    width: 20%;
+    margin-top: 30px;
+    padding: 7px 7px 10px 7px;
+}
+
+.hovered:hover {
+    transition: 1s;
+}
+
+.item_cards_main:hover {
+    cursor: poiner;
+    border: 1px solid black;
+    transition: 0.5s;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card img{
+    width: 100%;
+}
+
+.card img:hover {
+    cursor: pointer;
+}
+
+.card p {
+    text-align: center;
+    padding: 5px;
+}
+
+.card p:nth-child(2){
+    color: #10a37f;
+    font-size: 14px;
+}
+
+.buy_btn button {
+    display: flex;
+    justify-content: center;
+}

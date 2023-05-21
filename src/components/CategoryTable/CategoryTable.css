@@ -7,10 +7,17 @@
 }
 
 .list {
-    /* border: 1px solid red; */
     box-sizing: border-box;
     padding: 15px;
     display: flex;
+}
+
+.list_title p {
+    cursor: pointer;
+}
+
+.list_title p:hover  {
+    color: #10a37f;
 }
 
 .list_title p:nth-child(1){
@@ -19,7 +26,7 @@
     font-size: 14px;
 }
 
-.list_title p:hover {
+.list_title p:nth-child(1):hover{
     cursor: pointer;
-    color: #10a37f;
+    color: red !important;
 }

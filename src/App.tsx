@@ -8,9 +8,9 @@ import {
   Navigate,
 } from "react-router-dom";
 import { useState } from "react";
-import { NoAccounts } from "@mui/icons-material";
 import Layout from "./components/Layout";
 import Home from "./pages/Home";
+import Signup from "./pages/Signup";
 
 interface routeType {
   path: string;
@@ -33,7 +33,7 @@ function App() {
       <Router>
         {!authenticated ? (
           <Routes>
-            <Route path="/login" element={<Login />} />
+            <Route path="/login" element={<Login />} /> 
           </Routes>
         ) : (
           <Layout>
@@ -48,9 +48,10 @@ function App() {
             </Routes>
           </Layout>
         )}
-        {/* <Routes>
-          <Route path="/login" element={<Login />} />
-        </Routes> */}
+
+    <Routes>
+      <Route path="/signup" element={<Signup />}/>
+    </Routes>
       </Router>
     </div>
   );

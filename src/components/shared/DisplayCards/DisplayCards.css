@@ -10,7 +10,7 @@
 }
 
 .test_image img {
-    width: 60%;
+    width: 90%;
 }
 
 .test_image img:hover {
@@ -38,9 +38,9 @@
     bottom: 0;
     left: 50%;
     right: 0;
-    background-color: #008CBA;
+    background-color: #ddd6d6;
     overflow: hidden;
-    width: 60%;
+    width: 90%;
     height: 0;
     transition: .5s ease;
     transform: translateX(-50%);
