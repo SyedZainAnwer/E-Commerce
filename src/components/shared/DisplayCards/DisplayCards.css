@@ -1,6 +1,6 @@
 .display_cards_main{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .test_image {

@@ -1,0 +1,9 @@
+.tab_button{
+    padding: 8px 12px 8px 12px;
+    font-size: small;
+    border: 1px solid lightgray;
+}
+
+.tab_button:hover {
+    cursor: pointer;
+}

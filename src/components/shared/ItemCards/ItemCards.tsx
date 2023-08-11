@@ -32,6 +32,7 @@ const ItemCards = ({ image, title, price }: propsType) => {
         {showButton === true ? (
           <div className="buy_btn">
             <Btn
+              variant="outlined"
               text="Buy Now"
               iconStyle={{ display: "none" }}
               style={{ fontSize: "10px" }}

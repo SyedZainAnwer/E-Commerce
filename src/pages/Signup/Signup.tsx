@@ -62,6 +62,7 @@ const Signup = () => {
         </div>
         <div className="continue_btn">
           <Btn
+            variant="contained"
             text="Sign up"
             style={{
               width: "80%",
@@ -84,6 +85,7 @@ const Signup = () => {
         <div>
           <div className="google_btn">
             <Btn
+              variant="contained"
               text="Continue With Google"
               style={{
                 width: "80%",

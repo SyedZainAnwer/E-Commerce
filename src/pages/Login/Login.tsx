@@ -29,7 +29,7 @@ const Login = () => {
           />
         </div>
         <div className="continue_btn">
-          <Btn text="log in" style={{width:"100%", padding:"10px 125px", borderRadius:"5px", backgroundColor:"#10a37f"}} iconStyle={{display:"none"}}/>
+          <Btn variant="contained" text="log in" style={{width:"100%", padding:"10px 125px", borderRadius:"5px", backgroundColor:"#10a37f"}} iconStyle={{display:"none"}}/>
         </div>
         <p>
           Don't have an accouunt? <span>Sign up</span>
@@ -42,7 +42,7 @@ const Login = () => {
         </div>
         <div>
           <div className="google_btn">
-            <Btn text='Continue With Google' style={{width:"100%", padding: "5px 80px 5px 30px", backgroundColor:"white", color:"rgba(0, 0, 0, 0.87)", }} icon={<GoogleIcon />}/>
+            <Btn variant="contained" text='Continue With Google' style={{width:"100%", padding: "5px 80px 5px 30px", backgroundColor:"white", color:"rgba(0, 0, 0, 0.87)", }} icon={<GoogleIcon />}/>
           </div>
         </div>
       </div>

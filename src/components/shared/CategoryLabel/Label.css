@@ -1,0 +1,35 @@
+.label_main {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: #f7f7f7;
+    padding: 20px;
+    align-items: center;
+}
+
+.forward_icon {
+    display: flex;
+}
+
+.forward_icon img {
+    height: 50%;
+}
+
+.forward_icon img:hover {
+    cursor: pointer;
+}
+
+.tabs {
+    display: flex;
+}
+
+.product_tab {
+    margin-right: 10px;
+    color: #10a37f;
+}
+
+.product_tab:hover {
+    background-color: #10a37f;
+    color: white;
+    transition: 1s;
+}

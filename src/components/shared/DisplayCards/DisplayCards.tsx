@@ -1,30 +1,13 @@
-import BeautyImage from "../../../assets/image/beautyandcare.webp";
-import LifeStyleImage from "../../../assets/image/lifestyle.jpg";
-import KidsFashion from "../../../assets/image/kidsfashion.webp";
 import "./DisplayCards.css";
-
-const displayImages = [
-  {
-    image: BeautyImage,
-    id: 1,
-  },
-  {
-    image: LifeStyleImage,
-    id: 2,
-  },
-  {
-    image: KidsFashion,
-    id: 3,
-  },
-];
+import { displayImages } from "../../../utils/constants/appConstants"; 
 
 const DisplayCards = () => {
   return (
     <div className="display_cards_main">
       {displayImages.map((displayImage) => {
         return (
-          <div className="test_image">
-            <img src={displayImage.image} alt="" key={displayImage.id} />
+          <div className="test_image" key={displayImage.id}>
+            <img src={displayImage.image} alt="image" />
             <div className="overlay">
               <span className="text"></span>
             </div>
